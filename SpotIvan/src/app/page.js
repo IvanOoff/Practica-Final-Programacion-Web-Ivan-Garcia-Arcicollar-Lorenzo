@@ -90,10 +90,10 @@ export default function Home() {
       </nav>
 
       {/*Contenido de la pagina principal -> "Hero section"*/}
-      <div className="pt-20 pb-20 px-4 sm:px-6 lg:px-8 flex gap-7">
+      <div className="pt-20 pb-20 px-2 sm:px-4 flex flex-col lg:flex-row gap-4 lg:gap-7">
       
         {/* SECCION DE LA IZQUIERDA - TARGETA DE CREACIÓN DE PLAYLISTS*/}
-        <div className="w-80 bg-gray-900 rounded-2xl border border-gray-800 p-6 min-h-[600px] sticky top-20">
+        <div className="w-full lg:w-80 bg-gray-900 rounded-2xl border border-gray-800 p-4 sm:p-6 lg:min-h-[600px] lg:sticky lg:top-20">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold text-white">Tu biblioteca</h2>
             <div className="flex items-center bg-gray-500 px-2 py-0.3 rounded-full">
@@ -122,15 +122,15 @@ export default function Home() {
         </div>
 
         {/* TARJETA DEL MEDIO - PRINCIPAL (SIN WIDGETS)*/}
-        <div className="flex-1">
-          <div className="max-w-full mx-auto bg-linear-to-b from-gray-800 to-black rounded-2xl border border-gray-900 p-6">
-            <div className="text-center py-12">
-              <h2 className="text-3xl font-bold text-white mb-4">SpotIvan</h2>
-              <p className="text-gray-500 mb-8">Inicia sesión para poder crear playlists</p>
+        <div className="flex-1 w-full">
+          <div className="max-w-full mx-auto bg-linear-to-b from-gray-800 to-black rounded-2xl border border-gray-900 p-4 sm:p-6">
+            <div className="text-center py-8 sm:py-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">SpotIvan</h2>
+              <p className="text-gray-500 mb-8 text-sm sm:text-base">Inicia sesión para poder crear playlists</p>
               
               <button
                 onClick={handleLogin}
-                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition transform hover:scale-110">
+                className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg transition transform hover:scale-110">
                 Iniciar Sesión con Spotify
               </button>
             </div>
